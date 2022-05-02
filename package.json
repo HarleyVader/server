@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "0.0.2",
+  "description": "node/express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "melkanea",
+  "license": "ISC"
+}
