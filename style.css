@@ -1,0 +1,233 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            /* root css variables */
+            --btn-light: rgba(53, 17, 255, 0.692);
+            --btn-white: #ffd;
+            --btn-dark: rgba(31, 1, 167, 0.692);
+            /* transparency */
+            --trans-1: rgba(0, 0, 0, 0.1);
+            --trans-2: rgba(0, 0, 0, 0.5);
+            --trans-3: rgba(0, 0, 0, 0.95);
+            /* fonts */
+            --font-4: 'Roboto Slab', serif;
+            /* details */
+            --radius: 10px;
+            --border-1: inset 4px;
+            --padding-1: .5%;
+            --margin-1: .5%;
+            --padding-2: 2%;
+            --margin-2: 2%;
+            --margin-left: 5%;
+            /* theme */
+            --color-1: rgba(133, 0, 51, 0.95);
+            --color-2: rgba(138, 0, 62, 0.85);
+            --color-3: #d53624;
+            --color-4: rgba(158, 0, 124, 0.95);
+            --color-5: #0900b8;
+            --color-6: #da47ff;
+            --color-7: #1a0505;
+            --color-8: #4B4453;
+            --color-9: #f500dc;
+            --color-10: rgba(255, 122, 217, 0.67);
+            --color-11: rgba(255, 122, 217, 0.05);
+            --colorchanger: rgba(40, 1, 49, 0);
+            --transparency: rgba(0, 68, 80, 0.432);
+        }
+
+        body,
+        html {
+            background-color: var(--color-7);
+            background-image: url("https://i.imgur.com/xqBMf6L.jpg");
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
+        p {
+            color: var(--color-4);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+            color: rgba(255, 0, 149, 0.836);
+            text-shadow: var(--colorchanger);
+            text-shadow: 2px;
+        }
+
+        .transparency {
+            background-color: var(--transparency);
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
+
+        /* hmtl stuff */
+
+        .nowhere {
+            background-image: url("https://i.imgur.com/JcoYipC.jpg");
+            text-align: center;
+            size: 100%;
+        }
+
+        .br {
+            text-align: center;
+            text-transform: capitalize;
+            size: 1rem;
+        }
+
+        .footer {
+            background-image: url("https://i.imgur.com/JcoYipC.jpg");
+            text-align: center;
+            color: var(--color-1);
+            size: 100%;
+        }
+
+        .this-changes-color {
+            color: var(--colorchanger);
+            font-size: bold;
+            text-align: center;
+        }
+
+        .border {
+            border-style: dotted dashed solid double;
+            border-radius: var(--radius);
+            border-left: 4px;
+            padding: 1% 1% 1% 1%;
+            margin: 1% 1% 1% 1%;
+            border-color: var(--color-3);
+        }
+
+        .rickle {
+            background-image: url("https://i.imgur.com/7qAh5Ho.png");
+        }
+
+        .container-fluid {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+
+        /* nowhere buttons */
+
+        .btn-nowhere {
+            color: var(--btn-white);
+            background-color: var(--btn-light);
+            padding: 6px 13px 6px 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: var(--font-4);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: var(--radius);
+        }
+
+        .btn-nowhere:hover,
+        .btn-nowhere:focus {
+            color: var(--btn-white);
+            background-color: var(--btn-dark);
+            border-radius: var(--radius);
+        }
+
+        .btn-nowhere-cancel {
+            color: var(--color-8);
+            padding: 6px 13px 6px 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: var(--font-4);
+            border-radius: var(--radius);
+        }
+
+        .btn-nowhere-cancel:hover,
+        .btn-nowhere-cancel:focus {
+            border-color: var(--color-8);
+            color: var(--color-4);
+        }
+
+        .btn-nowhere-search {
+            color: var(--btn-white);
+            background-color: var(--btn-light);
+            padding: 6px 13px 6px 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: var(--font-4);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        ;
+
+        /* social media icons*/
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3b589894;
+            color: white;
+        }
+
+        .tumblr {
+            background: #2c4762;
+            color: white;
+        }
+
+        .twitter {
+            background: #55acee9f;
+            color: white;
+        }
+
+        .reddit {
+            background: #ff5700;
+            color: white;
+        }
+
+        .linkedin {
+            background: #007cb586;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb000086;
+            color: white;
+        }
+
+        .content {
+            margin-left: 75px;
+            font-size: 30px;
+        }

@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
-/*@GET home page
- *Melkaneas first GET  
- */
-router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+const http = require("http");
+
+const host = 'localhost';
+const port = 8000;
+
+const requestListener = function (req, res) {};
+
+const server = http.createServer(requestListener);
+server.listen(port, host, () => {
+    console.log(`Server is running on http://${host}:${port}`);
 });
-module.express = router;
